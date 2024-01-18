@@ -34,56 +34,56 @@ type SettingsCardType = {
 }
 
 const settings: SettingsCardType[] = [
-  {
-    heading: "API Key Management",
-    description: "Create and manage API keys",
-    icon: KeyIcon,
-    to: "/a/publishable-api-keys",
-    feature_flag: "publishable_api_keys",
-  },
-  {
-    heading: "Currencies",
-    description: "Manage the currencies of your store",
-    icon: CoinsIcon,
-    to: "/a/settings/currencies",
-  },
+  // {
+  //   heading: "API Key Management",
+  //   description: "Create and manage API keys",
+  //   icon: KeyIcon,
+  //   to: "/a/publishable-api-keys",
+  //   feature_flag: "publishable_api_keys",
+  // },
+  // {
+  //   heading: "Currencies",
+  //   description: "Manage the currencies of your store",
+  //   icon: CoinsIcon,
+  //   to: "/a/settings/currencies",
+  // },
   {
     heading: "Personal Information",
     description: "Manage your Medusa profile",
     icon: HappyIcon,
     to: "/a/settings/personal-information",
   },
-  {
-    heading: "Regions",
-    description: "Manage shipping, payment, and fulfillment across regions",
-    icon: MapPinIcon,
-    to: "/a/settings/regions",
-  },
-  {
-    heading: "Return Reasons",
-    description: "Manage reasons for returned items",
-    icon: ArrowUTurnLeft,
-    to: "/a/settings/return-reasons",
-  },
-  {
-    heading: "Sales Channels",
-    description: "Control which product are available in which channels",
-    icon: ChannelsIcon,
-    feature_flag: "sales_channels",
-    to: "/a/sales-channels",
-  },
+  // {
+  //   heading: "Regions",
+  //   description: "Manage shipping, payment, and fulfillment across regions",
+  //   icon: MapPinIcon,
+  //   to: "/a/settings/regions",
+  // },
+  // {
+  //   heading: "Return Reasons",
+  //   description: "Manage reasons for returned items",
+  //   icon: ArrowUTurnLeft,
+  //   to: "/a/settings/return-reasons",
+  // },
+  // {
+  //   heading: "Sales Channels",
+  //   description: "Control which product are available in which channels",
+  //   icon: ChannelsIcon,
+  //   feature_flag: "sales_channels",
+  //   to: "/a/sales-channels",
+  // },
   {
     heading: "Store Details",
     description: "Manage your business details",
     icon: CrosshairIcon,
     to: "/a/settings/details",
   },
-  {
-    heading: "Taxes",
-    description: "Manage taxes across regions and products",
-    icon: TaxesIcon,
-    to: "/a/settings/taxes",
-  },
+  // {
+  //   heading: "Taxes",
+  //   description: "Manage taxes across regions and products",
+  //   icon: TaxesIcon,
+  //   to: "/a/settings/taxes",
+  // },
   {
     heading: "The Team",
     description: "Manage users of your Medusa Store",
@@ -175,12 +175,12 @@ const Settings = () => {
     <Routes>
       <Route index element={<SettingsIndex />} />
       <Route path="/details" element={<Details />} />
-      <Route path="/regions/*" element={<Regions />} />
+      {/* <Route path="/regions/*" element={<Regions />} />
       <Route path="/currencies" element={<CurrencySettings />} />
-      <Route path="/return-reasons" element={<ReturnReasons />} />
+      <Route path="/return-reasons" element={<ReturnReasons />} /> */}
       <Route path="/team" element={<Users />} />
       <Route path="/personal-information" element={<PersonalInformation />} />
-      <Route path="/taxes/*" element={<Taxes />} />
+      {/* <Route path="/taxes/*" element={<Taxes />} /> */}
       {getSettings().map((s) => (
         <Route
           key={s.path}

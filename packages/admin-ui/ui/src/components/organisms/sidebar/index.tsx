@@ -66,35 +66,35 @@ const Sidebar: React.FC = () => {
             triggerHandler={triggerHandler}
             text={t("sidebar-orders", "Orders")}
           />
-          <SidebarMenuItem
+          {/* <SidebarMenuItem
             pageLink={"/a/products"}
             icon={<TagIcon size={ICON_SIZE} />}
             text={t("sidebar-products", "Products")}
             triggerHandler={triggerHandler}
-          />
-          {isFeatureEnabled("product_categories") && (
+          /> */}
+          {/* {isFeatureEnabled("product_categories") && (
             <SidebarMenuItem
               pageLink={"/a/product-categories"}
               icon={<SwatchIcon size={ICON_SIZE} />}
               text={t("sidebar-categories", "Categories")}
               triggerHandler={triggerHandler}
             />
-          )}
+          )} */}
           <SidebarMenuItem
             pageLink={"/a/customers"}
             icon={<UsersIcon size={ICON_SIZE} />}
             triggerHandler={triggerHandler}
             text={t("sidebar-customers", "Customers")}
           />
-          {inventoryEnabled && (
+          {/* {inventoryEnabled && (
             <SidebarMenuItem
               pageLink={"/a/inventory"}
               icon={<BuildingsIcon size={ICON_SIZE} />}
               triggerHandler={triggerHandler}
               text={t("sidebar-inventory", "Inventory")}
             />
-          )}
-          <SidebarMenuItem
+          )} */}
+          {/* <SidebarMenuItem
             pageLink={"/a/discounts"}
             icon={<SaleIcon size={ICON_SIZE} />}
             triggerHandler={triggerHandler}
@@ -105,7 +105,7 @@ const Sidebar: React.FC = () => {
             icon={<GiftIcon size={ICON_SIZE} />}
             triggerHandler={triggerHandler}
             text={t("sidebar-gift-cards", "Gift Cards")}
-          />
+          /> */}
           <SidebarMenuItem
             pageLink={"/a/pricing"}
             icon={<CashIcon size={ICON_SIZE} />}
