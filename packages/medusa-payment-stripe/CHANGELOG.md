@@ -1,5 +1,16 @@
 # Change Log
 
+## 6.0.7
+
+### Patch Changes
+
+- [#5838](https://github.com/medusajs/medusa/pull/5838) [`99a4f94d`](https://github.com/medusajs/medusa/commit/99a4f94db5ae25dd1688fe29556ba46923715e5f) Thanks [@olivermrbl](https://github.com/olivermrbl)! - feat(medusa-payment-stripe): Add delay to Stripe webhook
+
+- [#5991](https://github.com/medusajs/medusa/pull/5991) [`7f62ab1b`](https://github.com/medusajs/medusa/commit/7f62ab1b583f8ea39cc2aad169d98a5c514f40b1) Thanks [@adrien2p](https://github.com/adrien2p)! - fix(medusa, medusa-payment-stripe): fix stripe error handling
+
+- Updated dependencies [[`42cc8ae3`](https://github.com/medusajs/medusa/commit/42cc8ae3f89ed7d642e51654d1a3cca011f13155), [`45996d58`](https://github.com/medusajs/medusa/commit/45996d58a2665d72335faad11bea958f8da74195), [`9cc787ca`](https://github.com/medusajs/medusa/commit/9cc787cac4bf1c5d8edf1c4b548bb3205100e822), [`35507509`](https://github.com/medusajs/medusa/commit/3550750975a0c9359fd887929377733606ef03af), [`fbee006e`](https://github.com/medusajs/medusa/commit/fbee006e512ef2d56ffb23eeabad8b51b56be285), [`c41f3002`](https://github.com/medusajs/medusa/commit/c41f3002f3118b1f195c5c822fe0f400091d115b), [`d16d1061`](https://github.com/medusajs/medusa/commit/d16d10619dfbd3966a4709753de3d8cc37c6f2eb), [`890e76a5`](https://github.com/medusajs/medusa/commit/890e76a5c53039576c42ca4d46af6f6977cdebd1), [`fe007d01`](https://github.com/medusajs/medusa/commit/fe007d01bd827f0e09ee545e48cef18913540c68), [`76332ca6`](https://github.com/medusajs/medusa/commit/76332ca6c153a786acc07d3f06ff45c3b9346fd3)]:
+  - @medusajs/utils@1.11.3
+
 ## 6.0.6
 
 ### Patch Changes
