@@ -80,12 +80,12 @@ const Sidebar: React.FC = () => {
               triggerHandler={triggerHandler}
             />
           )} */}
-          <SidebarMenuItem
+          {/* <SidebarMenuItem
             pageLink={"/a/customers"}
             icon={<UsersIcon size={ICON_SIZE} />}
             triggerHandler={triggerHandler}
             text={t("sidebar-customers", "Customers")}
-          />
+          /> */}
           {/* {inventoryEnabled && (
             <SidebarMenuItem
               pageLink={"/a/inventory"}

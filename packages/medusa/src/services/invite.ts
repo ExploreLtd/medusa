@@ -2,7 +2,7 @@ import jwt, { JwtPayload } from "jsonwebtoken"
 import { MedusaError } from "medusa-core-utils"
 import { EntityManager } from "typeorm"
 import { UserService } from "."
-import { User } from ".."
+import { Invite, User } from ".."
 import { TransactionBaseService } from "../interfaces"
 import { UserRoles } from "../models/user"
 import { InviteRepository } from "../repositories/invite"
@@ -85,7 +85,7 @@ class InviteService extends TransactionBaseService {
     user: string,
     role: UserRoles,
     validDuration = DEFAULT_VALID_DURATION
-  ): Promise<void> {
+  ): Promise<Invite> {
     return await this.atomicPhase_(async (manager) => {
       const inviteRepository =
         this.activeManager_.withRepository(InviteRepository)
@@ -143,6 +143,7 @@ class InviteService extends TransactionBaseService {
           token: invite.token,
           user_email: invite.user_email,
         })
+      return invite
     })
   }
 
