@@ -6,7 +6,7 @@ import ParameterTypes from "@site/src/components/ParameterTypes"
 
 # StepFunctionResult
 
- **StepFunctionResult**: (`this`: [CreateWorkflowComposerContext](workflows.CreateWorkflowComposerContext.mdx)) => `TOutput` extends [] ? [...WorkflowData&#60;&#123; [K in keyof TOutput]: TOutput[number][K] &#125;&#62;[]] : [WorkflowData](workflows.WorkflowData.mdx)&#60;&#123; [K in keyof TOutput]: TOutput[K] &#125;&#62;
+ **StepFunctionResult**: (`this`: [CreateWorkflowComposerContext](workflows.CreateWorkflowComposerContext.mdx)) => [WorkflowData](workflows.WorkflowData.mdx)&#60;&#123; [K in keyof TOutput]: TOutput[K] &#125;&#62;
 
 ## Type Parameters
 
@@ -20,4 +20,4 @@ import ParameterTypes from "@site/src/components/ParameterTypes"
 
 ### Returns
 
-<ParameterTypes parameters={[{"name":"TOutput extends [] ? [...WorkflowData&#60;&#123; [K in keyof TOutput]: TOutput[number][K] &#125;&#62;[]] : WorkflowData&#60;&#123; [K in keyof TOutput]: TOutput[K] &#125;&#62;","type":"`TOutput` extends [] ? [...WorkflowData&#60;&#123; [K in keyof TOutput]: TOutput[number][K] &#125;&#62;[]] : [WorkflowData](workflows.WorkflowData.mdx)&#60;&#123; [K in keyof TOutput]: TOutput[K] &#125;&#62;","optional":false,"defaultValue":"","description":"","expandable":false,"children":[]}]} />
+<ParameterTypes parameters={[{"name":"WorkflowData","type":"[WorkflowData](workflows.WorkflowData.mdx)&#60;&#123; [K in keyof TOutput]: TOutput[K] &#125;&#62;","optional":false,"defaultValue":"","description":"","expandable":false,"children":[{"name":"&#123; [K in keyof TOutput]: TOutput[K] &#125;","type":"&#123; [K in keyof TOutput]: TOutput[K] &#125;","optional":false,"defaultValue":"","description":"","expandable":false,"children":[]}]}]} />
